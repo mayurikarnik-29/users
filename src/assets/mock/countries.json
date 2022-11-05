@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "Austria",
+            "region": "Europe"
+        },
+        {
+            "id": "2",
+            "name": "Germany",
+            "region": "Europe"
+        },
+        {
+            "id": "3",
+            "name": "Poland",
+            "region": "Europe"
+        },
+        {
+            "id": "4",
+            "name": "Hungary",
+            "region": "Europe"
+        },
+        {
+            "id": "5",
+            "name": "India",
+            "region": "Asia"
+        },
+        {
+            "id": "6",
+            "name": "China",
+            "region": "Asia"
+        }
+    ]
+}

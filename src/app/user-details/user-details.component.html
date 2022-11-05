@@ -1,0 +1,32 @@
+<div class="readonly-wrap">
+    <div class="form-switch">
+        <input class="form-check-input" (change)="switchMode($any($event.target)?.checked)" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+        <label class="form-check-label pl-5" for="flexSwitchCheckDefault">Readonly</label>
+    </div>
+</div>
+<form [formGroup]="form" class="user-details-form">
+    <div class="form-group mb-2">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" class="form-control" formControlName="firstname" [readonly]="readonly">
+    </div>
+    <div class="form-group mb-2">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" class="form-control" formControlName="lastname" [readonly]="readonly">
+    </div>
+    <div *ngIf="!readonly" class="form-group mb-2">
+        <label for="inputCountry">Country</label>
+        <select id="inputCountry" class="form-control" formControlName="country">
+            <option selected value="null">Select...</option>
+            <option value="country" *ngFor="let country of countries">{{country.name}}</option>
+        </select>
+    </div>
+    <div class="form-group mb-2">
+        <label for="profileCompletion">Profile Completion</label>
+        <input type="range" class="custom-range" min="0" max="1000" [value]="profileCompletionValue" id="profileCompletion" [readonly]="readonly">
+    </div>
+    <div class="form-group mb-2">
+        <label for="lastConnection">Last Connection</label>
+        <input type="input" id="lastConnection" class="form-control" formControlName="lastConnection" [readonly]="readonly">
+    </div>
+    <button type="submit" class="btn btn-primary fl-right">Submit</button>
+</form>

@@ -1,0 +1,35 @@
+<table class="table table-hover user-table">
+    <thead>
+        <tr>
+            <th colspan="8">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                        (change)="showConnectedUsers($any($event.target)?.checked)">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Show already connected users
+                    </label>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th class="align-middle" *ngFor="let userColumn of userColumns" scope="col">
+                {{userColumn | uppercase}}
+                <div *ngIf="filters.includes(userColumn)">
+                    <input class="form-control mt-2 mb-2" type="text" (input)="search($event, userColumn)"
+                        placeholder="Search by name" />
+                </div>
+            </th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr *ngFor="let user of users">
+            <th scope="row">{{user.id}}</th>
+            <td>{{user.firstname}}</td>
+            <td>{{user.lastname}}</td>
+            <td>
+                <button type="button" class="btn btn-primary btn-sm"
+                    [routerLink]="['/user-details', user.id]">Details</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,16 @@
+.user-details-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+.readonly-wrap {
+    font-size: 25px;
+    text-align: center;
+}
+.custom-range {
+    width: 100%;
+}

@@ -1,0 +1,40 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "firstname": "John",
+            "lastname": "Doe",
+            "birthdate": "1991-06-02",
+            "skills": [
+                "aws",
+                "java",
+                "azure"
+            ],
+            "profileCompletion": 555,
+            "lastConnection": "2022-02-23T09:58:00"
+        },
+        {
+            "id": "2",
+            "firstname": "Andrew",
+            "lastname": "Owen",
+            "birthdate": "1994-02-28",
+            "skills": [
+                "java",
+                "ui"
+            ],
+            "profileCompletion": 10,
+            "lastConnection": "2019-02-28T12:48:00"
+        },
+        {
+            "id": "3",
+            "firstname": "Sara",
+            "lastname": "James",
+            "birthdate": "1984-01-01",
+            "skills": [
+                "business analyst"
+            ],
+            "profileCompletion": 111,
+            "lastConnection": "2021-02-20T17:00:00"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "firstname": "John",
+            "lastname": "Doe",
+            "alreadyConnected": true
+        },
+        {
+            "id": "2",
+            "firstname": "Andrew",
+            "lastname": "Owen",
+            "alreadyConnected": true
+        },
+        {
+            "id": "3",
+            "firstname": "Sara",
+            "lastname": "James",
+            "alreadyConnected": false
+        }
+    ]
+}
